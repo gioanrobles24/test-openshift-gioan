@@ -4,6 +4,7 @@ WORKDIR /app
 # Copy only the built application (adjust the source path if needed)
 COPY .next/ .
 
+COPY public ./public
 # Expose the port your application uses
 EXPOSE 3000
 
