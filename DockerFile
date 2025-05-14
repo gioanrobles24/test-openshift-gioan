@@ -1,13 +1,11 @@
 FROM docker.io/library/node:20-alpine
 WORKDIR /app
 
-COPY package*.json ./
+# Copy only the built application (adjust the source path if needed)
+COPY build/ .
 
-RUN npm install
+# Expose the port your application uses
+EXPOSE 3000
 
-COPY . .
-
-RUN npm run build
-
-# If you have a specific server or entry point
+# Command to run your application
 CMD ["npm", "start"]
