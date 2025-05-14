@@ -2,7 +2,7 @@ FROM docker.io/library/node:20-alpine
 WORKDIR /app
 
 # Copy only the built application (adjust the source path if needed)
-COPY build/ .
+COPY .next/ .
 
 # Expose the port your application uses
 EXPOSE 3000
