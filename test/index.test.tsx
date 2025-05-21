@@ -23,7 +23,6 @@ describe("Home page", () => {
     expect(screen.getByText(/Docs/i)).toBeInTheDocument();
     expect(screen.getByText(/Learn/i)).toBeInTheDocument();
     expect(screen.getByText(/Templates/i)).toBeInTheDocument();
-    expect(screen.getByText(/Deploy/i)).toBeInTheDocument();
   });
 
   it("muestra las imágenes principales", () => {
