@@ -8,11 +8,6 @@ describe("Home page", () => {
     expect(screen.getByText(/Get started by editing/i)).toBeInTheDocument();
   });
 
-  it("muestra el enlace de documentación", () => {
-    render(<Home />);
-    expect(screen.getByRole("link", { name: /Docs/i })).toBeInTheDocument();
-  });
-
   it("muestra todos los enlaces principales", () => {
     render(<Home />);
     expect(screen.getByRole("link", { name: /Docs/i })).toBeInTheDocument();
